@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=4 uid="uid://bs4db28ao6yqr"]
+
+[ext_resource type="TileSet" uid="uid://bcchgn4f3kdr2" path="res://Assets/Sprites/World/world.tres" id="1_qaaop"]
+[ext_resource type="PackedScene" uid="uid://c4ybtuux6kcbt" path="res://Scenes/player.tscn" id="2_4tqda"]
+
+[node name="world_1-1" type="Node2D"]
+
+[node name="World" type="TileMapLayer" parent="."]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAEAAQAAgABAAAAAAAKAAQAAgABAAAAAAALAAQAAgABAAAAAAAPAAUAAgAAAAgAAAAQAAUAAgABAAgAAAAAAAcAAgAAAAAAAAAAAAgAAgAAAAAAAAABAAcAAgAAAAAAAAABAAgAAgAAAAAAAAACAAcAAgAAAAAAAAACAAgAAgAAAAAAAAADAAcAAgAAAAAAAAADAAgAAgAAAAAAAAAEAAcAAgAAAAAAAAAEAAgAAgAAAAAAAAAFAAcAAgAAAAAAAAAFAAgAAgAAAAAAAAAGAAcAAgAAAAAAAAAGAAgAAgAAAAAAAAAJAAcAAgAAAAAAAAAJAAgAAgAAAAAAAAAKAAcAAgAAAAAAAAAKAAgAAgAAAAAAAAALAAcAAgAAAAAAAAALAAgAAgAAAAAAAAAMAAcAAgAAAAAAAAAMAAgAAgAAAAAAAAANAAcAAgAAAAAAAAANAAgAAgAAAAAAAAAOAAcAAgAAAAAAAAAOAAgAAgAAAAAAAAAPAAYAAgAAAAkAAAAPAAcAAgAAAAAAAAAPAAgAAgAAAAAAAAAQAAYAAgABAAkAAAAQAAcAAgAAAAAAAAAQAAgAAgAAAAAAAAARAAcAAgAAAAAAAAARAAgAAgAAAAAAAAA=")
+tile_set = ExtResource("1_qaaop")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_4tqda")]
+position = Vector2(259, 184)
