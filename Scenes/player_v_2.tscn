@@ -1,66 +1,66 @@
-[gd_scene load_steps=19 format=3 uid="uid://c4ybtuux6kcbt"]
+[gd_scene load_steps=19 format=3 uid="uid://t10uympncn1a"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/player_v1.gd" id="1_5807a"]
-[ext_resource type="Texture2D" uid="uid://como53061avj7" path="res://Assets/Sprites/Character/smallmario.png" id="2_v4bj4"]
+[ext_resource type="Script" path="res://Assets/Scripts/player_v2.gd" id="1_por32"]
+[ext_resource type="Texture2D" uid="uid://como53061avj7" path="res://Assets/Sprites/Character/smallmario.png" id="2_3x82e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hgk4q"]
 radius = 24.0
 height = 64.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ixnu6"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(144, 72, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jkx8f"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(0, 0, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_60vcj"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(72, 72, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ncsi3"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(216, 72, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6wkrp"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(0, 144, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cj6mg"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(72, 0, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t5gxg"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(144, 0, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kvf1k"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(216, 0, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vg0d2"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(72, 144, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bggf"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(144, 144, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pqngf"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(216, 144, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxrya"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(0, 216, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1j081"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(72, 216, 72, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5ah5u"]
-atlas = ExtResource("2_v4bj4")
+atlas = ExtResource("2_3x82e")
 region = Rect2(0, 72, 72, 72)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dm2oa"]
@@ -143,10 +143,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="player_v1" type="CharacterBody2D"]
-script = ExtResource("1_5807a")
-JUMP_VELOCITY = -1000.0
-GRAVITY = 1200.0
+[node name="player_v2" type="CharacterBody2D"]
+script = ExtResource("1_por32")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_hgk4q")
