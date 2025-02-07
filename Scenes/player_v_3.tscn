@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2iudwx8elxbc"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/player_v3.gd" id="1_45hmb"]
+[ext_resource type="SpriteFrames" uid="uid://cimaak8cp32kn" path="res://Tres/mario.tres" id="1_wwjn8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xqs5f"]
+radius = 25.0
+height = 68.0
+
+[node name="player_v3" type="CharacterBody2D"]
+script = ExtResource("1_45hmb")
+speed = 300.0
+jump_height = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xqs5f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_wwjn8")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
